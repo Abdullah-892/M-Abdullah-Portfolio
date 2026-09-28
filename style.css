@@ -1,6 +1,3 @@
-/* =========================================================
-   GLOBAL RESET
-========================================================= */
 
 * {
     margin: 0;
@@ -867,6 +864,10 @@ a {
    ABOUT CARDS
 ========================================================= */
 
+/* =========================================================
+   ABOUT CARDS
+========================================================= */
+
 .about-cards {
     display: flex;
 
@@ -959,6 +960,34 @@ a {
     line-height: 1.6;
 }
 
+
+/* =========================================================
+   ABOUT CARDS — TABLET / MOBILE CENTER ALIGNMENT
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .about-cards {
+        text-align: center;
+    }
+
+    .highlight-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .highlight-card .card-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .highlight-card h3,
+    .highlight-card p {
+        text-align: center;
+    }
+}
 
 /* =========================================================
    PROJECTS / FEATURED
