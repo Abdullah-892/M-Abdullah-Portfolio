@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
@@ -23,7 +27,7 @@
     <!-- Font Awesome -->
     <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
     <!-- Main CSS -->
@@ -32,13 +36,15 @@
 
 <body>
 
-    <!-- =========================
+    <!-- =====================================================
          NAVBAR
-    ========================== -->
+    ====================================================== -->
 
     <header class="navbar-container">
 
+        <!-- Left -->
         <div class="nav-left">
+
             <a
                 href="#home"
                 class="rocket-logo"
@@ -46,10 +52,12 @@
             >
                 🚀
             </a>
+
         </div>
 
 
-        <div class="nav-center">
+        <!-- Center -->
+        <div class="nav-center" id="navCenter">
 
             <div class="nav-pill">
 
@@ -57,12 +65,30 @@
                     M Abdullah
                 </div>
 
-                <nav class="nav-links" id="navLinks">
+                <nav
+                    class="nav-links"
+                    id="navLinks"
+                >
 
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#home">
+                        Home
+                    </a>
+
+                    <a href="#about">
+                        About
+                    </a>
+
+                    <a href="#services">
+                        Services
+                    </a>
+
+                    <a href="#contact">
+                        Contact
+                    </a>
+
+                    <a href="#projects">
+                        Projects
+                    </a>
 
                 </nav>
 
@@ -71,6 +97,7 @@
         </div>
 
 
+        <!-- Right -->
         <div class="nav-right">
 
             <div class="right-nav-section">
@@ -103,14 +130,15 @@
                 <button
                     type="button"
                     class="theme-toggle-pill"
-                    aria-label="Toggle dark and light theme"
+                    id="themeToggle"
+                    aria-label="Toggle hero theme"
                     aria-pressed="false"
                 >
                     <span class="dot"></span>
                 </button>
 
 
-                <!-- About -->
+                <!-- About Button -->
                 <a
                     href="#about"
                     class="about-me-btn"
@@ -137,11 +165,16 @@
     </header>
 
 
-    <!-- =========================
-         HERO
-    ========================== -->
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
 
     <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
 
         <section
             id="home"
@@ -157,10 +190,21 @@
 
                 <h1>
 
-                    <span class="one">TURN</span>
-                    <span class="two">IDEAS</span>
-                    <span class="three">INTO</span>
-                    <span class="four">MODERN</span>
+                    <span class="one">
+                        TURN
+                    </span>
+
+                    <span class="two">
+                        IDEAS
+                    </span>
+
+                    <span class="three">
+                        INTO
+                    </span>
+
+                    <span class="four">
+                        MODERN
+                    </span>
 
                     <br>
 
@@ -170,19 +214,22 @@
 
 
                 <p class="hero-desc">
+
                     I'm M Abdullah, a web developer focused on creating
                     responsive, clean and engaging websites with HTML,
                     CSS and JavaScript.
+
                 </p>
 
 
                 <div class="hero-btns">
 
                     <a
-                        href="#services"
+                        href="#projects"
                         class="btn-primary"
                     >
                         VIEW MY WORK
+
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
 
@@ -197,6 +244,7 @@
                 </div>
 
 
+                <!-- Code Box -->
                 <div class="code-snippet-box">
 
                     <div class="code-header">
@@ -208,7 +256,11 @@
                     </div>
 
                     <div class="code-body">
-                        <p>Building..._</p>
+
+                        <p>
+                            Building..._
+                        </p>
+
                     </div>
 
                 </div>
@@ -216,6 +268,7 @@
             </div>
 
 
+            <!-- Hero Image -->
             <div class="hero-visual">
 
                 <img
@@ -229,9 +282,10 @@
         </section>
 
 
-        <!-- =========================
+
+        <!-- =================================================
              ABOUT
-        ========================== -->
+        ================================================== -->
 
         <section
             id="about"
@@ -247,8 +301,7 @@
                     </span>
 
                     <h2>
-                        Dedicated to Crafting Clean & Modern
-                        Web Experiences.
+                        Dedicated to Crafting Clean & Modern Web Experiences.
                     </h2>
 
                 </div>
@@ -259,26 +312,33 @@
                     <div class="about-text">
 
                         <p class="about-bio">
-                            Hi, I'm <strong>M Abdullah</strong>, a passionate
-                            web developer and college student. I focus on
-                            building responsive, user-friendly, and engaging
-                            websites using foundational technologies like
+
+                            Hi, I'm
+                            <strong>M Abdullah</strong>,
+                            a passionate web developer and college student.
+                            I focus on building responsive, user-friendly,
+                            and engaging websites using foundational
+                            technologies like
                             <strong>HTML, CSS, and JavaScript</strong>.
+
                         </p>
 
 
                         <p class="about-bio">
+
                             Rather than cluttering projects with unnecessary
                             heavy frameworks, I believe in writing solid,
                             clean code and leveraging intelligent tools like
                             AI as a smart assistant to speed up problem-solving,
                             debugging, and continuous learning.
+
                         </p>
 
 
                         <div class="about-meta">
 
                             <div class="meta-item">
+
                                 <span class="meta-label">
                                     Location
                                 </span>
@@ -286,10 +346,12 @@
                                 <span class="meta-value">
                                     Pakistan
                                 </span>
+
                             </div>
 
 
                             <div class="meta-item">
+
                                 <span class="meta-label">
                                     Focus
                                 </span>
@@ -297,10 +359,12 @@
                                 <span class="meta-value">
                                     Frontend Dev & UI
                                 </span>
+
                             </div>
 
 
                             <div class="meta-item">
+
                                 <span class="meta-label">
                                     Status
                                 </span>
@@ -308,6 +372,7 @@
                                 <span class="meta-value">
                                     Open to Opportunities
                                 </span>
+
                             </div>
 
                         </div>
@@ -324,6 +389,7 @@
                     </div>
 
 
+                    <!-- About Cards -->
                     <div class="about-cards">
 
                         <article class="highlight-card">
@@ -373,8 +439,8 @@
                             </h3>
 
                             <p>
-                                Managing code structures professionally using
-                                Git and publishing repositories on GitHub.
+                                Managing code professionally using Git and
+                                publishing repositories on GitHub.
                             </p>
 
                         </article>
@@ -388,9 +454,225 @@
         </section>
 
 
-        <!-- =========================
+
+        <!-- =================================================
+             PROJECTS
+        ================================================== -->
+
+        <section
+            id="projects"
+            class="projects-section"
+        >
+
+            <div class="section-title">
+
+                <span class="section-tag">
+                    WHAT I MAKE
+                </span>
+
+                <h2>
+                    Featured Projects
+                </h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+
+                    <div class="project-info">
+
+                        <h3>
+                            Dark Theme Portfolio & Contact System
+                        </h3>
+
+                        <div class="project-tech">
+
+                            <span>
+                                HTML5
+                            </span>
+
+                            <span>
+                                CSS3
+                            </span>
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a
+                                href="https://github.com/Abdullah-892/M-Abdullah-Portfolio"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-github"
+                            >
+
+                                <i class="fa-brands fa-github"></i>
+
+                                Code
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 2 -->
+                <article class="project-card">
+
+                    <div class="project-info">
+
+                        <h3>
+                            Responsive Business Website
+                        </h3>
+
+                        <div class="project-tech">
+
+                            <span>
+                                HTML5
+                            </span>
+
+                            <span>
+                                CSS3
+                            </span>
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a
+                                href="https://github.com/Abdullah-892/M-Abdullah-Portfolio"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-github"
+                            >
+
+                                <i class="fa-brands fa-github"></i>
+
+                                Code
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 3 -->
+                <article class="project-card">
+
+                    <div class="project-info">
+
+                        <h3>
+                            Interactive JavaScript Project
+                        </h3>
+
+                        <div class="project-tech">
+
+                            <span>
+                                HTML5
+                            </span>
+
+                            <span>
+                                CSS3
+                            </span>
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a
+                                href="https://github.com/Abdullah-892/M-Abdullah-Portfolio"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-github"
+                            >
+
+                                <i class="fa-brands fa-github"></i>
+
+                                Code
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 4 -->
+                <article class="project-card">
+
+                    <div class="project-info">
+
+                        <h3>
+                            Advanced Web Application
+                        </h3>
+
+                        <div class="project-tech">
+
+                            <span>
+                                HTML5
+                            </span>
+
+                            <span>
+                                CSS3
+                            </span>
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a
+                                href="#"
+                                class="btn-github"
+                            >
+
+                                <i class="fa-brands fa-github"></i>
+
+                                Code
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
              SERVICES
-        ========================== -->
+        ================================================== -->
 
         <section
             id="services"
@@ -406,8 +688,7 @@
                     </span>
 
                     <h2>
-                        Services Crafted for High Performance
-                        & Clean Code.
+                        Services Crafted for High Performance & Clean Code.
                     </h2>
 
                 </div>
@@ -426,9 +707,9 @@
                         </h3>
 
                         <p>
-                            Building responsive, modern, and engaging user
-                            interfaces using semantic HTML, CSS, and
-                            vanilla JavaScript.
+                            Building responsive, modern, and engaging
+                            user interfaces using semantic HTML,
+                            CSS, and vanilla JavaScript.
                         </p>
 
                     </article>
@@ -445,8 +726,9 @@
                         </h3>
 
                         <p>
-                            Transforming clean design concepts into interactive
-                            web layouts with smooth hover effects and animations.
+                            Transforming clean design concepts into
+                            interactive web layouts with smooth
+                            hover effects and animations.
                         </p>
 
                     </article>
@@ -463,8 +745,9 @@
                         </h3>
 
                         <p>
-                            Leveraging AI assistance for rapid problem-solving,
-                            debugging, and writing efficient, maintainable code.
+                            Leveraging AI assistance for rapid
+                            problem-solving, debugging, and writing
+                            efficient, maintainable code.
                         </p>
 
                     </article>
@@ -476,9 +759,10 @@
         </section>
 
 
-        <!-- =========================
+
+        <!-- =================================================
              CONTACT
-        ========================== -->
+        ================================================== -->
 
         <section
             id="contact"
@@ -490,7 +774,7 @@
                 <div class="contact-header">
 
                     <span class="section-tag">
-                        03 / GET IN TOUCH
+                        GET IN TOUCH
                     </span>
 
                     <h2>
@@ -507,8 +791,12 @@
 
                 <div class="contact-content">
 
+
+                    <!-- Contact Information -->
                     <div class="contact-info">
 
+
+                        <!-- Email -->
                         <div class="info-card">
 
                             <div class="info-icon">
@@ -516,6 +804,7 @@
                             </div>
 
                             <div>
+
                                 <h4>
                                     Email Me
                                 </h4>
@@ -523,11 +812,13 @@
                                 <p>
                                     abdullahcode45@gmail.com
                                 </p>
+
                             </div>
 
                         </div>
 
 
+                        <!-- Location -->
                         <div class="info-card">
 
                             <div class="info-icon">
@@ -535,6 +826,7 @@
                             </div>
 
                             <div>
+
                                 <h4>
                                     Location
                                 </h4>
@@ -542,11 +834,13 @@
                                 <p>
                                     Pakistan
                                 </p>
+
                             </div>
 
                         </div>
 
 
+                        <!-- Social -->
                         <div class="info-card">
 
                             <div class="info-icon">
@@ -559,8 +853,11 @@
                                     Social Profiles
                                 </h4>
 
+
                                 <div class="social-links">
 
+
+                                    <!-- GitHub -->
                                     <a
                                         href="https://github.com/Abdullah-892"
                                         target="_blank"
@@ -571,16 +868,38 @@
                                     </a>
 
 
+                                    <!-- Fiverr -->
                                     <a
-                                        href="https://www.fiverr.com"
+                                        href="YOUR_FIVERR_PROFILE_URL"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        class="social-fiverr"
                                         aria-label="Fiverr"
                                     >
-                                        <i class="fa-solid fa-circle-f"></i>
+
+                                        <svg
+                                            class="fiverr-icon"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true"
+                                        >
+
+                                            <path
+                                                d="M14.75 5.15c.84 0 1.52-.68 1.52-1.52s-.68-1.52-1.52-1.52-1.52.68-1.52 1.52.68 1.52 1.52 1.52Z"
+                                                fill="currentColor"
+                                            />
+
+                                            <path
+                                                d="M8.15 7.35v3.18H6.35v3.1h1.8v6.15H5.7v3.12h7.55v-3.12h-2.18v-6.15h3.55v9.27h3.45v-9.27h2.35v-3.1h-5.8V7.35c0-1.37.72-2.08 2.1-2.08h1.15V2.25h-1.45c-3.05 0-5.12 1.9-5.12 5.1Z"
+                                                fill="currentColor"
+                                            />
+
+                                        </svg>
+
                                     </a>
 
 
+                                    <!-- LinkedIn -->
                                     <a
                                         href="https://linkedin.com"
                                         target="_blank"
@@ -599,13 +918,18 @@
                     </div>
 
 
-                    <!-- Contact Form -->
+
+                    <!-- =================================================
+                         CONTACT FORM
+                    ================================================== -->
 
                     <form
                         class="contact-form"
                         id="contactForm"
                     >
 
+
+                        <!-- Name -->
                         <div class="floating-group">
 
                             <input
@@ -624,6 +948,7 @@
                         </div>
 
 
+                        <!-- Email -->
                         <div class="floating-group">
 
                             <input
@@ -642,6 +967,7 @@
                         </div>
 
 
+                        <!-- Subject -->
                         <div class="floating-group">
 
                             <input
@@ -659,6 +985,7 @@
                         </div>
 
 
+                        <!-- Message -->
                         <div class="floating-group">
 
                             <textarea
@@ -676,15 +1003,18 @@
                         </div>
 
 
+                        <!-- Submit -->
                         <button
                             type="submit"
                             class="submit-btn"
                         >
+
                             <span>
                                 Send Message
                             </span>
 
                             <i class="fa-solid fa-paper-plane"></i>
+
                         </button>
 
                     </form>
@@ -698,9 +1028,10 @@
     </main>
 
 
-    <!-- =========================
+
+    <!-- =====================================================
          FOOTER
-    ========================== -->
+    ====================================================== -->
 
     <footer class="hero-footer">
 
@@ -711,6 +1042,8 @@
     </footer>
 
 
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
