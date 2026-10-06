@@ -1,4 +1,3 @@
-
 /* =========================================
    THEME TOGGLE
 ========================================= */
@@ -176,11 +175,7 @@ if (mobileMenuBtn && navCenter) {
 
 
 /* =========================================
-   CONTACT FORM
-========================================= */
-
-/* =========================================
-   CONTACT FORM
+   CONTACT FORM (FORMSPREE INTEGRATION)
 ========================================= */
 
 const contactForm =
@@ -264,17 +259,18 @@ if (contactForm) {
             try {
 
                 /* -----------------------------------------
-                   SEND DATA TO BACKEND
+                   SEND DATA TO FORMSPREE
                 ----------------------------------------- */
 
                 const response =
                     await fetch(
-                        "/api/contact",
+                        "https://formspree.io/f/xjygkywq",
                         {
 
                             method: "POST",
 
                             headers: {
+                                "Accept": "application/json",
                                 "Content-Type":
                                     "application/json"
                             },
@@ -294,10 +290,7 @@ if (contactForm) {
                    SUCCESS
                 ----------------------------------------- */
 
-                if (
-                    response.ok &&
-                    result.success
-                ) {
+                if (response.ok) {
 
                     alert(
                         "Message sent successfully! I will get back to you soon."
@@ -316,7 +309,7 @@ if (contactForm) {
                 else {
 
                     alert(
-                        result.message ||
+                        result.error ||
                         "Unable to send your message. Please try again."
                     );
 
@@ -334,7 +327,7 @@ if (contactForm) {
 
 
                 alert(
-                    "Unable to connect to the server. Please try again later."
+                    "Unable to connect to Formspree. Please try again later."
                 );
 
             }
